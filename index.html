@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7ec3af2eb5.js" crossorigin="anonymous"></script>
     <style>
         .card:hover .content {
             opacity: 1;
@@ -28,38 +29,134 @@
         <div class="bg-black bg-opacity-50 p-8 rounded-lg">
             <h1 class="text-4xl font-bold">Welcome to My Website</h1>
             <p class="text-lg">We are a digital agency that specializes in web development, graphic design, and digital marketing.</p>
-            <a href="#contact" class="inline-block mt-4 bg-red-500 text-white px-6 py-2">Contact Us</a>
+            <a href="#about" class="inline-block mt-4 bg-red-500 text-white px-6 py-2">Start-up Checkpoint</a>
         </div>
     </header>
-    <!-- Main Section -->
-    <main>
-        <section id="about" class="p-8">
-            <h2 class="text-2xl font-bold">About Us</h2>
-            <p>We specialize in web development, graphic design, and digital marketing.</p>
-        </section>
-        <section id="services" class="p-8">
-            <h2 class="text-2xl font-bold">Our Services</h2>
-            <div class="grid gap-8 md:grid-cols-1">
-                <!-- Card 1 -->
-                <div class="p-6 bg-white shadow-lg rounded-lg">
-                    <h3 class="text-lg font-semibold mb-4">Web Design</h3>
-                    <p class="text-black-600 mt-4">We create beautiful and modern designs for your website.</p>
+   <!-- Main Section -->
+<main class="px-6 py-10 text-center">
+    <section id="about" class="mb-10 cursor-pointer">
+        <h2 class="text-4xl font-bold">About Us</h2>
+        <p>We specialize in web development, graphic design, and digital marketing.</p>
+    </section>
+    <section id="services" class="p-8">
+        <h2 class="text-2xl font-bold">Our Services</h2>
+        <div class="grid grid-cols-8 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="card relative bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="image-slot">
+                    <img src="pexels-jorge-estrada-570157092-30893121.jpg" alt="Web Development">
                 </div>
-            
-                <!-- Card 2 -->
-                <div class="p-6 bg-white shadow-lg rounded-lg">
-                    <h3 class="text-lg font-semibold mb-4">SEO Optimization</h3>
-                    <p class="text-black-600 mt-4">Boost your website's visibility on search engines.</p>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold">Web Development</h3>
                 </div>
-            
-                <!-- Card 3 -->
-                <div class="p-6 bg-white shadow-lg rounded-lg">
-                    <h3 class="text-lg font-semibold mb-4">E-commerce</h3>
-                    <p class="text-black-600 mt-4">Custom online stores tailored to your business needs.</p>
+                <div class="content absolute inset-0 bg-black bg-opacity-75 text-white opacity-0 flex items-center justify-center transition-opacity duration-300">
+                    <p>We build responsive and user-friendly websites that are tailored to your needs.</p>
                 </div>
             </div>
-            
-        </section>
-    </main>
+            <div class="card relative bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="image-slot">
+                    <img src="Screenshot 2024-12-12 203219.png" alt="CEO Optimization">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold">CEO Optimization</h3>
+                </div>
+                <div class="content absolute inset-0 bg-black bg-opacity-75 text-white opacity-0 flex items-center justify-center transition-opacity duration-300">
+                    <p>We create beautiful and modern designs for your website, app, and print needs.</p>
+                </div>
+            </div>
+            <div class="card relative bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="image-slot">
+                    <img src="Screenshot 2024-12-12 202348.png" alt="E-Commerce">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold">E-Commerce</h3>
+                </div>
+                <div class="content absolute inset-0 bg-black bg-opacity-75 text-white opacity-0 flex items-center justify-center transition-opacity duration-300">
+                    <p>Custom online store solutions tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Form Section -->
+   <section id="contact" class="py-10 bg-gray-100">
+    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+    <form class="max-w-md mx-auto bg-white shadow-md rounded-lg p-8">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-gray-700">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+        </div>
+        <div class="mb-4">
+            <label for="message" class="block text-gray-700">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"></textarea>
+        </div>
+        <button type="submit" class="max-w-auto bg-green-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300">Submit</button>
+    </form>
+</section>
+    <!---Footer Section-->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <!--About Section-->
+          <div>
+            <h3 class="text-lg font-semibold mb-2">About</h3>
+            <p class="text-gray-400">We are dedicated to providing top-notch web services</p>
+         </div>  
+           <!--Quick Links-->
+           <div>
+            <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
+            <ul class="space-y-2">
+                <li><a href="#hero" class="text-gray-400 hover:text-white transition">Home</a></li>
+                <li><a href="#about" class="text-gray-400 hover:text-white transition">About</a></li>
+                <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+             </ul>
+           </div>
+           <!--Contact Section-->
+           <div>
+            <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
+            <p class="text-gray-400">Email: jeremywawesh@gmail.com</p>
+            <p class="text-gray-400">Phone: +254793947439</p>
+        </div>
+        <div>
+            <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
+            <div class="flex space-x-4">
+                <a href="#hero" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#about" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#services" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-square-instagram"></i></a>
+
+            </div>
+        </div>
+        
+
+
+        </div>
+
+    </footer>
+
+    
+    
+   
+</main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
